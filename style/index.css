@@ -76,8 +76,6 @@ h1{
     color: #ffffff;
     padding-left: 3%;
     margin: 4% 0;
-
-
 }
 h2{
     font-size: 4rem;
@@ -160,7 +158,7 @@ nav a{
 .section2{
     display: flex;
     flex-wrap: wrap;
-    height: 100vh;
+    /* height: 100vh; */
     justify-content: space-evenly;
 }
 .sec2img{
@@ -248,4 +246,87 @@ footer button{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+/* media queries */
+
+/* tablet view 800px */
+
+@media (max-width: 800px){
+    h1{
+        text-align: center;
+    }
+    nav a{
+        width: 100%;
+    }
+    .section1 .left, .section1 .right{
+        width: 50%;
+    }
+    .sec2img{
+        margin: 1%;
+        background-size: contain;
+    }
+    .sec2img p{
+        font-size: 1.5rem;
+    }
+
+}
+
+/* mobile view 500px */
+@media (max-width: 500px){
+    .top{
+        display: flex;
+        align-items: center;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: space-between;
+        justify-content: center;
+        width: 40%;
+    }
+    nav a{
+        margin: 1%;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .section1{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 2%;
+    }
+    .left{
+        height: 40vh;
+    }
+    .section1 .right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 4% 0;
+    }
+    .right h2{
+        text-align: center;
+        padding: 1%;
+        font-size: 3rem;
+    }
+    .right button{
+        width: 35%;
+        text-align: center;
+    }
+    .right p{
+        text-align: center;
+    }
+    .sec2img{
+        width: 40%;
+    }
+    footer h3{
+        font-size: 2.5rem;
+    }
+    footer button{
+        width: 35%;
+    }
 }
